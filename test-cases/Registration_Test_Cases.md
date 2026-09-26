@@ -69,14 +69,14 @@
 
 ### TC-REG-006 — Enter malformed Email
 - **Scenario:** TS-REG-006 · **Priority:** High · **Type:** Negative
-- **Test data:** `invalid-email`.
+- **Test data:** An email address missing a domain suffix after `@` (tester-supplied value withheld from the public repo).
 - **Precondition:** Fresh registration page.
 - **Steps:**
-  1. Fill all required fields with otherwise valid data and set Email to `invalid-email`.
+  1. Fill all required fields with otherwise valid data and set Email to an address missing a domain suffix after `@`.
   2. Click **Register**.
 - **Expected:** Registration is prevented and an email-format validation message appears. Note whether validation comes from the browser or application.
-- **Actual:** Tester confirmed that submitting `invalid-email` with otherwise valid required fields completed registration successfully; no email-format validation message appeared. See [BUG-REG-001](../bug-reports/BUG-REG-001_Invalid_Email_Accepted.md).
-- **Status:** Fail (user-reported).
+- **Actual:** Screenshot supplied by the tester shows the registration form displaying “Wrong email” beneath the malformed address. A separate screenshot shows an address ending in `.co` followed by successful registration; `.co` is a valid suffix, so that outcome does not establish a defect. The screenshots are not published because they display personal details.
+- **Status:** Pass (user-reported, screenshot reviewed).
 
 ### TC-REG-007 — Reuse a registered Email
 - **Scenario:** TS-REG-007 · **Priority:** High · **Type:** Negative
@@ -122,7 +122,7 @@
 
 ## Execution record
 
-The tester reported nine Pass outcomes and one Fail (TC-REG-006). The failure is documented as BUG-REG-001 based on the tester's observation. Add a screenshot or screen recording if available and retest in a controlled environment.
+The tester reported ten Pass outcomes. For TC-REG-006, the supplied screenshot shows a malformed address rejected with “Wrong email”; a different address ending in `.co` was accepted as valid. No registration defect is established by these screenshots. The screenshots contain personal details and are not stored in this public repository.
 
 ## Observed form fields
 
