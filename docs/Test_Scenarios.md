@@ -101,3 +101,25 @@ This document contains high-level test scenarios for the customer-facing nopComm
 | TS-SRCH-016 | Search | Verify a customer can revise a keyword and search again from the results page | Functional | Medium |
 
 > Choose reproducible products and search terms during test case design; catalog content on the shared demo may change.
+
+## M05 – Product Details
+
+| Scenario ID | Module | Test Scenario | Type | Priority |
+|---|---|---|---|---|
+| TS-PDP-001 | Product Details | Verify the product page shows the selected product name and description | Functional | High |
+| TS-PDP-002 | Product Details | Verify the displayed product price is consistent with its listing, accounting for selected options | Functional | High |
+| TS-PDP-003 | Product Details | Verify the main product image and available additional images can be viewed | UI/Functional | Medium |
+| TS-PDP-004 | Product Details | Verify availability and stock information is displayed accurately when available | Functional | Medium |
+| TS-PDP-005 | Product Details | Verify required product options must be selected before adding an applicable product to the cart | Negative | High |
+| TS-PDP-006 | Product Details | Verify selecting product options updates the price or details where applicable | Functional | High |
+| TS-PDP-007 | Product Details | Verify a configurable product with valid options can be added to the cart | Positive | High |
+| TS-PDP-008 | Product Details | Verify a simple product can be added to the cart from its details page | Positive | High |
+| TS-PDP-009 | Product Details | Verify the quantity field rejects zero, negative, and nonnumeric values where editable | Negative/Boundary | High |
+| TS-PDP-010 | Product Details | Verify adding multiple units reflects the selected quantity in the cart | Functional | High |
+| TS-PDP-011 | Product Details | Verify adding a product to the wishlist from the details page where supported | Functional | Medium |
+| TS-PDP-012 | Product Details | Verify adding a product to the compare list from the details page where supported | Functional | Medium |
+| TS-PDP-013 | Product Details | Verify available product reviews and rating information are visible | UI/Functional | Low |
+| TS-PDP-014 | Product Details | Verify product review submission behavior for eligible and ineligible customers | Positive/Negative | Medium |
+| TS-PDP-015 | Product Details | Verify product information and purchase controls remain usable on mobile and desktop viewports | Responsive | Medium |
+
+> Select representative simple and configurable products during test case design. Some controls depend on product configuration or store settings.
