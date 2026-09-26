@@ -34,3 +34,26 @@ This document contains high-level test scenarios for the customer-facing nopComm
 | TS-REG-024 | Registration | Verify navigation from registration confirmation to the store | Functional | Medium |
 
 > These are proposed scenarios, not executed test results. Confirm field availability and validation rules against the demo before writing detailed expected results.
+
+## M02 – Login and Logout
+
+| Scenario ID | Module | Test Scenario | Type | Priority |
+|---|---|---|---|---|
+| TS-AUTH-001 | Login/Logout | Verify login with a registered email and correct password | Positive | High |
+| TS-AUTH-002 | Login/Logout | Verify login with an unregistered email | Negative | High |
+| TS-AUTH-003 | Login/Logout | Verify login with a registered email and incorrect password | Negative | High |
+| TS-AUTH-004 | Login/Logout | Verify validation when email and password are both empty | Negative | High |
+| TS-AUTH-005 | Login/Logout | Verify validation when email is empty | Negative | High |
+| TS-AUTH-006 | Login/Logout | Verify validation when password is empty | Negative | High |
+| TS-AUTH-007 | Login/Logout | Verify validation for a malformed email address | Negative | Medium |
+| TS-AUTH-008 | Login/Logout | Verify password characters are masked on the login form | UI/Security | Medium |
+| TS-AUTH-009 | Login/Logout | Verify the Remember Me option preserves login as configured | Functional | Medium |
+| TS-AUTH-010 | Login/Logout | Verify the login page provides a password recovery path | Functional | Medium |
+| TS-AUTH-011 | Login/Logout | Verify a user can request password recovery with a registered email | Functional | Medium |
+| TS-AUTH-012 | Login/Logout | Verify password recovery behavior with an unregistered or invalid email | Negative | Medium |
+| TS-AUTH-013 | Login/Logout | Verify a logged-in customer can log out | Positive | High |
+| TS-AUTH-014 | Login/Logout | Verify account-only pages are protected after logout | Security/Functional | High |
+| TS-AUTH-015 | Login/Logout | Verify browser Back navigation after logout does not restore an authenticated session | Security/Edge Case | High |
+| TS-AUTH-016 | Login/Logout | Verify a customer can log in again after logging out | Positive | Medium |
+
+> Verify the precise Remember Me and password recovery behavior against the public demo before defining detailed expected results.
