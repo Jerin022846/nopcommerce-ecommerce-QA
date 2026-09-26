@@ -21,17 +21,15 @@ This document contains high-level test scenarios for the customer-facing nopComm
 | TS-REG-011 | Registration | Verify validation when Confirm Password is empty | Negative | High |
 | TS-REG-012 | Registration | Verify registration with a Gender selection | Positive | Medium |
 | TS-REG-013 | Registration | Verify registration without selecting Gender | Positive | Medium |
-| TS-REG-014 | Registration | Verify Date of Birth field behavior with valid values | Positive | Medium |
-| TS-REG-015 | Registration | Verify registration without Date of Birth | Positive | Low |
-| TS-REG-016 | Registration | Verify Company field accepts valid input | Positive | Low |
-| TS-REG-017 | Registration | Verify registration without Company information | Positive | Low |
-| TS-REG-018 | Registration | Verify newsletter subscription selection during registration | Functional | Medium |
-| TS-REG-019 | Registration | Verify entered Password is masked | UI/Security | Medium |
-| TS-REG-020 | Registration | Verify entered Confirm Password is masked | UI/Security | Medium |
-| TS-REG-021 | Registration | Verify leading and trailing whitespace handling in applicable fields | Edge Case | Medium |
-| TS-REG-022 | Registration | Verify behavior when Register is clicked repeatedly | Edge Case | Medium |
-| TS-REG-023 | Registration | Verify successful registration confirmation is displayed | Positive | High |
-| TS-REG-024 | Registration | Verify navigation from registration confirmation to the store | Functional | Medium |
+| TS-REG-014 | Registration | Verify Company field accepts valid input | Positive | Low |
+| TS-REG-015 | Registration | Verify registration without Company information | Positive | Low |
+| TS-REG-016 | Registration | Verify newsletter subscription selection during registration | Functional | Medium |
+| TS-REG-017 | Registration | Verify entered Password is masked | UI/Security | Medium |
+| TS-REG-018 | Registration | Verify entered Confirm Password is masked | UI/Security | Medium |
+| TS-REG-019 | Registration | Verify leading and trailing whitespace handling in applicable fields | Edge Case | Medium |
+| TS-REG-020 | Registration | Verify behavior when Register is clicked repeatedly | Edge Case | Medium |
+| TS-REG-021 | Registration | Verify successful registration confirmation is displayed | Positive | High |
+| TS-REG-022 | Registration | Verify navigation from registration confirmation to the store | Functional | Medium |
 
 > These are proposed scenarios, not executed test results. Confirm field availability and validation rules against the demo before writing detailed expected results.
 
