@@ -3,7 +3,7 @@
 **Application:** [nopCommerce Demo Store](https://demo.nopcommerce.com/register)  
 **Scope:** Customer registration, first 10 detailed cases  
 **Basis:** [Requirement Analysis](../docs/Requirement_Analysis.md) and [Test Scenarios](../docs/Test_Scenarios.md)  
-**Execution source:** Results below were supplied by the tester. They were not independently observed in this workspace. Two cases need clarification.  
+**Execution source:** Results below were supplied by the tester and clarified for TC-REG-006 and TC-REG-010. They were not independently observed in this workspace.  
 **Environment to record on execution:** Date/time, OS, browser and version, viewport, and account data identifier.
 
 ## Test data
@@ -75,8 +75,8 @@
   1. Fill all required fields with otherwise valid data and set Email to `invalid-email`.
   2. Click **Register**.
 - **Expected:** Registration is prevented and an email-format validation message appears. Note whether validation comes from the browser or application.
-- **Actual:** Needs clarification: the supplied results conflict. One entry says the invalid email was rejected as expected; another says registration completed without an email-format error. Browser versus application validation was not established.
-- **Status:** Needs Review.
+- **Actual:** Tester confirmed that submitting `invalid-email` with otherwise valid required fields completed registration successfully; no email-format validation message appeared. See [BUG-REG-001](../bug-reports/BUG-REG-001_Invalid_Email_Accepted.md).
+- **Status:** Fail (user-reported).
 
 ### TC-REG-007 — Reuse a registered Email
 - **Scenario:** TS-REG-007 · **Priority:** High · **Type:** Negative
@@ -117,12 +117,12 @@
   1. Fill all required fields with valid data except Confirm password.
   2. Click **Register**.
 - **Expected:** Registration is prevented and the missing or mismatched confirmation is identified.
-- **Actual:** User reported “Password is required” when Confirm password was empty. It is unclear whether this message was associated with the Confirm password field or the Password field; verify field association and whether submission was prevented.
-- **Status:** Needs Review.
+- **Actual:** Tester confirmed that “Password is required” appeared under the Confirm password input and registration was prevented.
+- **Status:** Pass (user-reported).
 
 ## Execution record
 
-The tester reported eight Pass outcomes and two cases needing review (TC-REG-006 and TC-REG-010). Preserve exact observed messages and add screenshots or a bug ID if a failure is confirmed. No defect is confirmed from the conflicting or ambiguous observations.
+The tester reported nine Pass outcomes and one Fail (TC-REG-006). The failure is documented as BUG-REG-001 based on the tester's observation. Add a screenshot or screen recording if available and retest in a controlled environment.
 
 ## Observed form fields
 
