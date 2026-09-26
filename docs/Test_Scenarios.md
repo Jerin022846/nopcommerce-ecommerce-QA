@@ -78,3 +78,26 @@ This document contains high-level test scenarios for the customer-facing nopComm
 | TS-CAT-014 | Product Catalog | Verify category navigation remains usable at mobile and desktop viewport sizes | Responsive | Medium |
 
 > Confirm which categories offer filters, pagination, display modes, and empty states before turning conditional scenarios into detailed test cases.
+
+## M04 – Product Search
+
+| Scenario ID | Module | Test Scenario | Type | Priority |
+|---|---|---|---|---|
+| TS-SRCH-001 | Search | Verify a known product keyword returns relevant products | Positive | High |
+| TS-SRCH-002 | Search | Verify a partial product name returns relevant matching products | Positive | High |
+| TS-SRCH-003 | Search | Verify a keyword with no matching products shows a clear empty result message | Negative | Medium |
+| TS-SRCH-004 | Search | Verify submitting an empty search term shows appropriate validation or search behavior | Negative | Medium |
+| TS-SRCH-005 | Search | Verify search results link to the correct product details pages | Functional | High |
+| TS-SRCH-006 | Search | Verify case variation in a keyword produces the expected search results | Edge Case | Medium |
+| TS-SRCH-007 | Search | Verify leading and trailing spaces in a keyword are handled appropriately | Edge Case | Medium |
+| TS-SRCH-008 | Search | Verify search with punctuation or special characters handles the input safely | Negative/Edge Case | Medium |
+| TS-SRCH-009 | Search | Verify a long keyword is handled without breaking the search page | Boundary | Low |
+| TS-SRCH-010 | Search | Verify advanced search can narrow results by category | Functional | Medium |
+| TS-SRCH-011 | Search | Verify advanced search can include subcategories when the option is available | Functional | Medium |
+| TS-SRCH-012 | Search | Verify advanced search can narrow results by manufacturer where applicable | Functional | Medium |
+| TS-SRCH-013 | Search | Verify searching product descriptions changes matching results when enabled | Functional | Medium |
+| TS-SRCH-014 | Search | Verify searching product tags changes matching results when enabled | Functional | Medium |
+| TS-SRCH-015 | Search | Verify combining advanced search options produces results consistent with the selected criteria | Functional | Medium |
+| TS-SRCH-016 | Search | Verify a customer can revise a keyword and search again from the results page | Functional | Medium |
+
+> Choose reproducible products and search terms during test case design; catalog content on the shared demo may change.
